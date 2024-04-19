@@ -5,12 +5,12 @@
     "content": {
       "Tabs": {
         "About": "À propos",
-        "Projects": "Projets",
+        "Project": "Projets",
         "Contact": "Contact"
       },
       "SectionAbout": {
         "Resume":
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum obcaecati eveniet nemo enim ex tempora est, consectetur distinctio itaque. Ut recusandae totam architecto nemo quod laboriosam necessitatibus magnam voluptatem at vero earum iusto deleniti enim quibusdam distinctio corrupti fugit rerum iste, tempora minus. Iste facere ducimus voluptates adipisci, fugit ipsum! Doloremque veniam, et tempora dolor ut iusto! Enim eius nam necessitatibus aliquam dignissimos eaque harum beatae veritatis repudiandae neque.",
+          "Bonjour !*Je suis Alhassane Diallo,* je suis un développeur web passionné par la création de sites web et d'applications web. J'aime travailler avec des technologies modernes et des outils de développement pour créer des sites web et des applications web qui sont à la fois beaux et fonctionnels. J'ai une expérience dans le développement de sites web et d'applications web pour des clients dans divers secteurs, y compris la technologie, la mode, la santé et l'éducation. Je suis toujours à la recherche de nouveaux projets et de nouveaux clients pour travailler ensemble. Si vous avez un projet en tête, n'hésitez pas à me contacter !*",
 
         "Extended": "En savoir plus"
       },
@@ -25,7 +25,7 @@
     "content": {
       "Tabs": {
         "About": "About",
-        "Projects": "Projects",
+        "Project": "Projects",
         "Contact": "Contact"
       },
       "SectionAbout": {
