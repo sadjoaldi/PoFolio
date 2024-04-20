@@ -10,13 +10,13 @@
       },
       "SectionAbout": {
         "Resume":
-          "Bonjour !*Je suis Alhassane Diallo,* je suis un développeur web passionné par la création de sites web et d'applications web. J'aime travailler avec des technologies modernes et des outils de développement pour créer des sites web et des applications web qui sont à la fois beaux et fonctionnels. J'ai une expérience dans le développement de sites web et d'applications web pour des clients dans divers secteurs, y compris la technologie, la mode, la santé et l'éducation. Je suis toujours à la recherche de nouveaux projets et de nouveaux clients pour travailler ensemble. Si vous avez un projet en tête, n'hésitez pas à me contacter !*",
+          "Bonjour !*Je suis Alhassane Diallo,* je suis un développeur web passionné par la création de sites web et d'applications web. J'aime travailler avec des technologies modernes et des outils de développement pour créer des sites web et des applications web qui sont à la fois beaux et fonctionnels. *",
 
         "Extended": "En savoir plus"
       },
       "SectionContact": {
         "Message": "Vous avez un projet en tête ?",
-        "ButtonText": "Contactez-moi"
+        "ButtonText": "Contactez - moi"
       }
     }
   },

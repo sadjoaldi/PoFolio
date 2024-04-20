@@ -2,7 +2,6 @@ fetch("../JSON/language.json")
   .then((response) => response.json())
   .then((data) => {
     language = data;
-    console.log(language);
 
     const langIcon = document.querySelector("#iconLang");
     const icon = document.querySelector("#iconMode");
