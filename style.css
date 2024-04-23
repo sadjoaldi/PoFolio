@@ -344,3 +344,118 @@ nav {
 .footer a {
   fill: var(--Darker-DarkMode);
 }
+
+/* ajout du mode mobile  */
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+  .ADinformation nav li a {
+    font-size: 1.2vw;
+  }
+  .brand img {
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .ADinformation {
+    width: auto;
+  }
+  .item {
+    width: 45vw;
+  }
+  .item p {
+    font-size: 3vw;
+  }
+  .item::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 0;
+    height: 24vw;
+    background-color: var(--Darker-DarkMode);
+    transition: 500ms;
+    pointer-events: none;
+  }
+
+  .item img {
+    width: 45vw;
+    margin: 0px;
+  }
+
+  #contact p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .description h1 {
+    font-size: 1.5rem;
+  }
+  .description {
+    width: 80%;
+    font-size: 1rem;
+    gap: 0;
+  }
+
+  .ADinformation header nav ul {
+    width: 100%;
+    gap: 10vw;
+  }
+  #iconMode {
+    width: 3.5vw;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+  #iconLang {
+    font-size: 3vw;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+  .btn {
+    font-size: 2vw;
+    width: 32vw;
+    height: 10vw;
+  }
+  footer {
+    padding: 20px;
+    gap: 10vw;
+  }
+
+  .footer a {
+    margin: 0 1.75%;
+  }
+  svg {
+    width: 2vw;
+    height: 2vw;
+    transform: scale(2);
+  }
+}
+
+@media (max-width: 600px) {
+  #iconMode {
+    width: 5vw;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+  #iconLang {
+    font-size: 4vw;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+  .btn {
+    font-size: 3vw;
+    width: 52vw;
+    height: 15vw;
+  }
+  footer {
+    gap: 10vw;
+  }
+  svg {
+    width: 3.6vw;
+    height: 3.6vw;
+    transform: scale(2);
+  }
+}
