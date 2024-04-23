@@ -5,17 +5,17 @@ fetch("../JSON/language.json")
 
     const langIcon = document.querySelector("#iconLang");
     const icon = document.querySelector("#iconMode");
-    const brand = document.querySelector(".brand");
+    const brand = document.querySelector(".brand img");
     let src;
 
     // pour changer le mode de la page
     icon.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
       if (document.body.classList.contains("dark-mode")) {
-        brand.src = src = "../images/brand/Alhassane_Diallo.png";
+        brand.src = "../images/brand/photosaneinverser.png";
         icon.src = "../images/icons/imoon.png";
       } else {
-        brand.src = src = "../images/brand/alhassane_diallolog.png";
+        brand.src = "../images/brand/alhassane_diallolog.png";
         icon.src = src = "../images/icons/isun.png";
       }
     });

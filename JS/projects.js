@@ -12,7 +12,7 @@ const ItemCreat = (title, url, image, description) => {
   webUrl.href = url;
   webUrl.target = "_blank";
   webUrl.appendChild(Image);
-  webUrl.addEventListener("mouseover", (e) => show(e.target, description)); // Passez 'description' à 'show'
+  webUrl.addEventListener("mouseover", (e) => show(e.target, description));
   webUrl.addEventListener("mouseout", () => hide());
   Title.innerText = title;
   Image.src = image;
@@ -32,7 +32,7 @@ const projList = (Projects) => {
           Projects[i].Url,
           Projects[i].UrlImage,
           Projects[i].Description
-        ) // Passez 'Projects[i].Description' à 'ItemCreat'
+        )
       );
       projectArea.appendChild(items);
     }
