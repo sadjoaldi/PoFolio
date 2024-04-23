@@ -1,6 +1,6 @@
 const brand = document.querySelector(".brand img");
 const tabs = document.querySelectorAll(".tabs");
-const content = document.querySelectorAll(".content");
+const content = document.querySelector(".content");
 const about = document.querySelector("#about");
 const project = document.querySelector("#project");
 const contact = document.querySelector("#contact");
@@ -53,9 +53,7 @@ const TabSwitcher = () => {
     case 1:
       tabs.forEach((element) => element.classList.remove("selected"));
       tabs[0].classList.add("selected");
-      content.forEach((element) => {
-        element.style.transform = "translateX(0vw)";
-      });
+      content.style.transform = `translateX(0px)`;
       if (window.innerWidth <= 768) {
         about.style.display = "flex";
         project.style.display = "none";
@@ -68,9 +66,7 @@ const TabSwitcher = () => {
     case 2:
       tabs.forEach((element) => element.classList.remove("selected"));
       tabs[1].classList.add("selected");
-      content.forEach((element) => {
-        element.style.transform = "translateX(0vw)";
-      });
+      content.style.transform = `translateX(0vw)`;
       if (window.innerWidth <= 768) {
         about.style.display = "none";
         project.style.display = "flex";
@@ -83,9 +79,7 @@ const TabSwitcher = () => {
     case 3:
       tabs.forEach((element) => element.classList.remove("selected"));
       tabs[2].classList.add("selected");
-      content.forEach((element) => {
-        element.style.transform = "translateX(0vw)";
-      });
+      content.style.transform = `translateX(0vw)`;
       if (window.innerWidth <= 768) {
         about.style.display = "none";
         project.style.display = "none";

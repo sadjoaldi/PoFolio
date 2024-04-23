@@ -86,7 +86,7 @@ nav {
   font-weight: 500;
 }
 
-.ADinformation header nav ul li a ::after {
+.ADinformation header nav ul li a::after {
   content: "";
   position: absolute;
   background: var(--Middle-DarkMode);
@@ -96,18 +96,6 @@ nav {
   left: 0;
   transition: all 0.5s;
 }
-
-.ADinformation nav li a:hover::after {
-  width: 100%;
-}
-
-.ADinformation li a.selected::after {
-  background-color: var(--Darker-DarkMode);
-  width: 100%;
-  height: 3px;
-}
-
-/* debut du style de la partie contenant le "about" "projet" "contact" */
 
 /* style navbar liste */
 
@@ -120,6 +108,18 @@ nav {
 .tabs:hover {
   color: var(--Middle-DarkMode);
 }
+
+.ADinformation nav li a:hover::after {
+  width: 100%;
+}
+
+.ADinformation li a.selected::after {
+  background: var(--Darker-DarkMode);
+  width: 100%;
+  height: 3px;
+}
+
+/* debut du style de la partie contenant le "about" "projet" "contact" */
 
 /* fin partie header */
 .carrosel {

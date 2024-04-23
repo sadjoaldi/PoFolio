@@ -1,8 +1,8 @@
 const projectArea = document.querySelector("#project-area");
 
 // creaction des elements de la page de projet
-const ItemCreat = (title, url, image, description) => {
-  // Ajoutez 'description' comme argument
+const ItemCreat = (title, url, image) => {
+  // Ajout de  comme argument
   const CardBody = document.createElement("div");
   const webUrl = document.createElement("a");
   const Title = document.createElement("p");
@@ -12,7 +12,7 @@ const ItemCreat = (title, url, image, description) => {
   webUrl.href = url;
   webUrl.target = "_blank";
   webUrl.appendChild(Image);
-  webUrl.addEventListener("mouseover", (e) => show(e.target, description));
+  webUrl.addEventListener("mouseover", (e) => show(e.target));
   webUrl.addEventListener("mouseout", () => hide());
   Title.innerText = title;
   Image.src = image;
@@ -25,16 +25,11 @@ const ItemCreat = (title, url, image, description) => {
 const projList = (Projects) => {
   if (Projects.length > 0) {
     for (let i = 0; i < Projects.length; i++) {
-      const items = document.createElement("li");
-      items.appendChild(
-        ItemCreat(
-          Projects[i].Title,
-          Projects[i].Url,
-          Projects[i].UrlImage,
-          Projects[i].Description
-        )
+      const item = document.createElement("li");
+      item.appendChild(
+        ItemCreat(Projects[i].Title, Projects[i].Url, Projects[i].UrlImage)
       );
-      projectArea.appendChild(items);
+      projectArea.appendChild(item);
     }
   } else projectArea.innerHTML = "<p> Pas de project disponible </p>";
 };
